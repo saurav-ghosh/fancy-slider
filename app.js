@@ -122,13 +122,13 @@ searchBtn.addEventListener('click', function () {
   clearInterval(timer);
   const search = document.getElementById('search');
   getImages(search.value);
-  sliders.length = 1;
+  sliders.length = 0;
   search.value = "";
 })
 
 sliderBtn.addEventListener('click', function () {
   const duration = document.getElementById('duration').value || 1000;
-  if(duration < 0){
+  if(duration < 1){
     alert('duration value should not be negative.');
     return;
   }
