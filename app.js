@@ -85,10 +85,10 @@ const createSlider = () => {
   });
 
   changeSlide(0)
-    timer = setInterval(function () {
-      slideIndex++;
-      changeSlide(slideIndex);
-    }, duration);
+  timer = setInterval(function () {
+    slideIndex++;
+    changeSlide(slideIndex);
+  }, duration);
 }
 
 // change slider index 
@@ -128,7 +128,7 @@ searchBtn.addEventListener('click', function () {
 
 sliderBtn.addEventListener('click', function () {
   const duration = document.getElementById('duration').value || 1000;
-  if(duration < 1){
+  if (duration < 1) {
     alert('duration value should not be negative.');
     return;
   }
@@ -149,10 +149,10 @@ search.addEventListener("keypress", function (event) {
 const toggleSpinner = (show) => {
   const spinner = document.getElementById('loading-spinner');
   const imgContainer = document.getElementById('image-container');
-  if(show == true){
+  if (show == true) {
     spinner.classList.remove('d-none');
     imgContainer.classList.add('d-none');
-  }else{
+  } else {
     spinner.classList.add('d-none');
     imgContainer.classList.remove('d-none');
   }
