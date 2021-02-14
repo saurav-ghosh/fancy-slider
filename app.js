@@ -122,7 +122,7 @@ searchBtn.addEventListener('click', function () {
   clearInterval(timer);
   const search = document.getElementById('search');
   getImages(search.value);
-  sliders.length = 0;
+  sliders.length = 1;
   search.value = "";
 })
 
